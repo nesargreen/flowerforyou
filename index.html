@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flowers for you | Bespoke Artisanal Floristry & Luxury Gift Suites Dhaka</title>
+  
+  <!-- Material Symbols Outlined -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  
+  <!-- Google Fonts: Playfair Display, Plus Jakarta Sans, Hind Siliguri -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS with Forms and Container Queries -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary": "#2b0018",
+            "on-primary-container": "#c57597",
+            "inverse-on-surface": "#ebf1fd",
+            "on-surface": "#161c25",
+            "on-background": "#161c25",
+            "deep-burgundy": "#470063",
+            "tertiary-fixed": "#ffd9e1",
+            "secondary-fixed": "#ffd9e1",
+            "surface-container-low": "#eff4ff",
+            "on-secondary-container": "#78354a",
+            "error": "#ba1a1a",
+            "canvas-cream": "#FDFBF7",
+            "primary-fixed-dim": "#ffb0cf",
+            "surface-variant": "#dde3ef",
+            "outline": "#847378",
+            "on-error-container": "#93000a",
+            "surface-container": "#e9eefa",
+            "border-subtle": "#EFE6DE",
+            "error-container": "#ffdad6",
+            "on-tertiary-fixed-variant": "#693846",
+            "secondary": "#8f485d",
+            "background": "#f8f9ff",
+            "on-tertiary": "#ffffff",
+            "inverse-primary": "#ffb0cf",
+            "surface-container-high": "#e3e8f5",
+            "surface-container-lowest": "#ffffff",
+            "secondary-fixed-dim": "#ffb1c5",
+            "on-primary-fixed-variant": "#72304f",
+            "on-secondary-fixed-variant": "#733146",
+            "tertiary-container": "#431826",
+            "secondary-container": "#fba2ba",
+            "on-secondary-fixed": "#3c041b",
+            "surface-petal": "#FFF0F4",
+            "tertiary": "#290411",
+            "outline-variant": "#d6c1c7",
+            "on-tertiary-container": "#ba7d8c",
+            "surface": "#f8f9ff",
+            "inverse-surface": "#2b313a",
+            "tertiary-fixed-dim": "#f8b4c5",
+            "on-error": "#ffffff",
+            "on-primary-fixed": "#3c0223",
+            "accent-gold": "#C5A059",
+            "on-secondary": "#ffffff",
+            "surface-container-highest": "#dde3ef",
+            "surface-bright": "#f8f9ff",
+            "surface-cream": "#F8F4EE",
+            "on-primary": "#ffffff",
+            "primary-fixed": "#ffd8e5",
+            "surface-dim": "#d5dae6",
+            "surface-tint": "#8e4767",
+            "on-surface-variant": "#524348",
+            "primary-container": "#4a0e2e",
+            "on-tertiary-fixed": "#350d1b"
+          },
+          "fontFamily": {
+            "headline-lg-mobile": ["Playfair Display"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "price-display": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "display-lg": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "display-lg-mobile": ["Playfair Display"]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-canvas-cream text-on-surface antialiased font-body-md text-body-md selection:bg-tertiary-fixed selection:text-primary">
+
+  <!-- ================= SILENT FRAME PRELOADER ================= -->
+  <div id="preloader" class="fixed inset-0 z-[9999] bg-[#07070a] flex flex-col items-center justify-center transition-opacity duration-500">
+    <div class="relative w-16 h-16 mb-4">
+      <div class="w-full h-full border-4 border-white/10 border-t-pink-500 rounded-full animate-spin"></div>
+      <span class="absolute inset-0 flex items-center justify-center text-2xl">🌸</span>
+    </div>
+    <p class="text-white text-sm font-label-md tracking-widest uppercase">Flowers for you Atelier</p>
+    <p id="loader-status" class="text-pink-400 text-xs mt-2 font-mono">Loading 300 Frames...</p>
+  </div>
+
+  <!-- ================= FIXED / STICKY GLASS NAVIGATION BAR (100% GLASS & TRANSLUCENT) ================= -->
+  <div class="fixed top-0 left-0 w-full z-[100]">
+    
+    <!-- Top Announcement Bar (Glass Variant) -->
+    <div id="top-bar" class="topbar-glass text-white py-2 px-3 md:px-6 text-xs">
+      <div class="w-full px-2 md:px-4 flex flex-col md:flex-row items-center justify-between gap-2">
+        <div class="flex items-center gap-2 font-label-sm text-label-sm tracking-wide">
+          <span class="inline-block animate-pulse">🌸</span>
+          <span>Free Delivery Inside Dhaka on Orders Over <strong class="text-pink-300 font-semibold">৳2,500</strong></span>
+          <span class="hidden lg:inline text-white/40">|</span>
+          <span class="hidden lg:inline text-pink-200">⚡ Same-Day Express in Gulshan, Banani, Dhanmondi & Uttara</span>
+        </div>
+        <div class="flex items-center gap-4 text-xs font-label-sm text-label-sm">
+          <button onclick="scrollToBloomAnimation()" class="flex items-center gap-1 text-pink-300 hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[15px]">motion_photos_on</span>
+            <span class="font-semibold underline">Replay Bloom Motion</span>
+          </button>
+          <span class="text-white/40">|</span>
+          <a class="flex items-center gap-1 text-white/90 hover:text-pink-300 transition-colors duration-200" href="tel:+8801712345678">
+            <span class="material-symbols-outlined text-[15px]">call</span>
+            <span>+880 1712-345678</span>
+          </a>
+          <span class="text-white/40">|</span>
+          <div class="flex items-center gap-1 text-pink-300">
+            <span class="material-symbols-outlined text-[15px]">payments</span>
+            <span class="font-medium">BDT (৳)</span>
+          </div>
+          <span class="text-white/40">|</span>
+          <div class="flex items-center gap-1.5 cursor-pointer hover:text-pink-300">
+            <span class="font-semibold text-white">EN</span>
+            <span class="opacity-50">/</span>
+            <span class="text-white/70 hover:text-white">বাংলা</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Glassmorphic Translucent Header Navbar -->
+    <header class="navbar-glass text-white font-headline-md transition-all duration-300">
+      <div class="w-full px-3 md:px-6 xl:px-8 flex items-center justify-between h-20">
+        
+        <!-- Brand Logo (Shifted left) -->
+        <a class="flex items-center gap-2.5 group py-1 flex-shrink-0" href="#">
+          <div class="w-10 h-10 rounded-full bg-pink-500/20 border border-pink-400/40 flex items-center justify-center text-pink-300 group-hover:scale-105 group-hover:border-pink-300 transition-all duration-300 shadow-sm flex-shrink-0">
+            <span class="material-symbols-outlined text-xl text-pink-300" data-weight="fill">local_florist</span>
+          </div>
+          <div class="flex flex-col justify-center">
+            <span class="font-headline-lg text-xl md:text-2xl text-white tracking-tight font-medium leading-tight group-hover:text-pink-300 transition-colors duration-300 drop-shadow-sm">Flowers for you</span>
+            <div class="flex items-center gap-1.5">
+              <span class="font-label-sm text-[9px] md:text-[10px] tracking-widest uppercase text-pink-300 font-semibold">Atelier & Botanicals</span>
+              <span class="text-[9px] text-accent-gold hidden sm:inline">•</span>
+              <span class="font-label-sm text-[9px] md:text-[10px] tracking-widest uppercase text-white/70 hidden sm:inline">Dhaka</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Navigation Links (Mega Nav with Glass Dropdowns) -->
+        <nav class="hidden lg:flex items-center gap-5 xl:gap-7 my-auto">
+          <div class="relative group flex items-center">
+            <a class="text-white font-label-md text-xs font-semibold tracking-wide border-b-2 border-pink-400 py-1 px-1 flex items-center gap-1 transition-all duration-300 hover:text-pink-300" href="#products">
+              <span>Flowers</span>
+              <span class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
+            </a>
+            <!-- Mega Menu Dropdown -->
+            <div class="absolute top-full -left-4 w-72 bg-[#160a14]/95 backdrop-blur-2xl border border-white/15 shadow-2xl rounded-lg p-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
+              <p class="font-label-sm text-label-sm text-pink-300 font-semibold uppercase tracking-wider mb-2 border-b border-white/10 pb-1.5">Artisanal Florals</p>
+              <div class="grid grid-cols-1 gap-1 text-sm text-white/90">
+                <a class="p-1.5 rounded hover:bg-white/10 hover:text-pink-300 transition-colors flex items-center justify-between" href="#products" onclick="filterCategory('all')">
+                  <span>Dutch Red & Pink Roses</span>
+                  <span class="text-xs text-pink-300">24 Styles</span>
+                </a>
+                <a class="p-1.5 rounded hover:bg-white/10 hover:text-pink-300 transition-colors flex items-center justify-between" href="#products" onclick="filterCategory('romantic')">
+                  <span>Oriental & Stargazer Lilies</span>
+                  <span class="text-xs text-pink-300">16 Styles</span>
+                </a>
+                <a class="p-1.5 rounded hover:bg-white/10 hover:text-pink-300 transition-colors flex items-center justify-between" href="#products" onclick="filterCategory('sameday')">
+                  <span>Imported Orchids & Exotics</span>
+                  <span class="text-xs text-pink-300">9 Varieties</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative group flex items-center">
+            <a class="text-white/90 font-label-md text-xs font-medium tracking-wide hover:text-pink-300 py-1 px-1 flex items-center gap-1 transition-colors duration-300" href="#products" onclick="filterCategory('combos')">
+              <span>Chocolates</span>
+              <span class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
+            </a>
+            <div class="absolute top-full -left-4 w-64 bg-[#160a14]/95 backdrop-blur-2xl border border-white/15 shadow-2xl rounded-lg p-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
+              <p class="font-label-sm text-label-sm text-pink-300 font-semibold uppercase tracking-wider mb-2 border-b border-white/10 pb-1.5">Gourmet Confections</p>
+              <div class="space-y-1 text-sm text-white/90">
+                <a class="block p-1.5 rounded hover:bg-white/10 hover:text-pink-300" href="#products" onclick="filterCategory('combos')">Ferrero Rocher Pyramids</a>
+                <a class="block p-1.5 rounded hover:bg-white/10 hover:text-pink-300" href="#products" onclick="filterCategory('combos')">Swiss Lindt Truffle Pouches</a>
+                <a class="block p-1.5 rounded hover:bg-white/10 hover:text-pink-300" href="#products" onclick="filterCategory('combos')">Belgian Gold Leaf Truffles</a>
+              </div>
+            </div>
+          </div>
+
+          <a class="text-white/90 font-label-md text-xs font-medium tracking-wide hover:text-pink-300 py-1 px-1 transition-colors duration-300" href="#products" onclick="filterCategory('combos')">Combos</a>
+          <a class="text-white/90 font-label-md text-xs font-medium tracking-wide hover:text-pink-300 py-1 px-1 transition-colors duration-300" href="#occasions">Occasions</a>
+          <a class="text-white/90 font-label-md text-xs font-medium tracking-wide hover:text-pink-300 py-1 px-1 transition-colors duration-300 pr-2" href="#events">Events</a>
+        </nav>
+
+        <!-- Right Actions (Search bar smaller & shifted right, wishlist, account, cart) -->
+        <div class="flex items-center gap-2.5 sm:gap-3.5 ml-4 md:ml-8">
+          
+          <!-- Live Search Bar Wrapper (Glass style) -->
+          <div class="relative hidden sm:block">
+            <div class="flex items-center bg-white/15 backdrop-blur-md border border-white/20 rounded-full px-3 py-1.5 focus-within:border-pink-300 focus-within:ring-1 focus-within:ring-pink-300 transition-all shadow-xs">
+              <span class="material-symbols-outlined text-white/70 text-[17px] mr-1">search</span>
+              <input id="liveSearchInput" type="text" placeholder="Search flowers..." class="w-24 md:w-36 bg-transparent text-xs border-0 focus:ring-0 p-0 placeholder:text-white/60 text-white focus:outline-none">
+              <button id="clearSearch" class="hidden text-white/70 hover:text-white">
+                <span class="material-symbols-outlined text-xs">close</span>
+              </button>
+            </div>
+
+            <!-- Suggestions Popover -->
+            <div id="searchSuggestions" class="hidden absolute top-full left-0 right-0 mt-2 bg-[#160a14]/95 backdrop-blur-2xl border border-white/15 shadow-2xl rounded-lg p-3 z-50 text-xs">
+              <p class="font-label-sm text-[10px] text-pink-300 font-semibold uppercase tracking-wider mb-2">Trending In Dhaka</p>
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <button onclick="applySearchTag('Red Dutch Roses')" class="bg-white/10 text-white hover:bg-pink-500/30 px-2 py-1 rounded text-[11px] transition-colors">Red Dutch Roses</button>
+                <button onclick="applySearchTag('Ferrero Rocher Box')" class="bg-white/10 text-white hover:bg-pink-500/30 px-2 py-1 rounded text-[11px] transition-colors">Ferrero Rocher</button>
+                <button onclick="applySearchTag('Anniversary')" class="bg-white/10 text-white hover:bg-pink-500/30 px-2 py-1 rounded text-[11px] transition-colors">Anniversary</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wishlist Button -->
+          <button id="wishlistTriggerBtn" title="Wishlist" class="relative w-9 h-9 rounded-full bg-white/15 backdrop-blur-md hover:bg-white/25 border border-white/20 flex items-center justify-center text-white transition-colors">
+            <span class="material-symbols-outlined text-[20px]">favorite</span>
+            <span id="wishlistBadge" class="absolute -top-0.5 -right-0.5 bg-pink-500 text-white text-[9px] w-4 h-4 rounded-full flex items-center justify-center font-bold shadow-xs">1</span>
+          </button>
+
+          <!-- Account Dropdown Button -->
+          <div class="relative group">
+            <button class="h-9 px-2.5 rounded-full bg-white/15 backdrop-blur-md hover:bg-white/25 border border-white/20 flex items-center gap-1.5 text-white transition-colors text-xs font-medium">
+              <span class="material-symbols-outlined text-[20px] text-pink-300">account_circle</span>
+              <span class="hidden md:inline font-label-md text-xs font-semibold">Account</span>
+            </button>
+            <div class="absolute right-0 top-full mt-1 w-48 bg-[#160a14]/95 backdrop-blur-2xl border border-white/15 shadow-xl rounded-lg p-2 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all text-xs space-y-1 z-50 text-white">
+              <a href="#" class="block px-3 py-2 rounded hover:bg-white/10 font-medium text-white">My Floral Orders</a>
+              <a href="#" class="block px-3 py-2 rounded hover:bg-white/10 text-white/80">Saved Addresses (Dhaka)</a>
+              <div class="border-t border-white/10 my-1"></div>
+              <a href="#" class="block px-3 py-2 text-pink-300 hover:text-white font-semibold">Sign In / Register</a>
+            </div>
+          </div>
+
+          <!-- Cart Drawer Trigger Button -->
+          <button id="cartOpenBtn" title="Shopping Bag" class="h-9 pl-3 pr-3.5 bg-gradient-to-r from-pink-600 to-primary text-white rounded-full hover:from-pink-500 hover:to-primary-container shadow-md transition-all duration-200 flex items-center gap-2 group cursor-pointer border border-pink-400/30">
+            <div class="relative flex items-center justify-center">
+              <span class="material-symbols-outlined text-[19px] text-secondary-fixed">shopping_bag</span>
+              <span id="cartCountBadge" class="absolute -top-1.5 -right-2 bg-accent-gold text-primary font-bold text-[9px] w-3.5 h-3.5 rounded-full flex items-center justify-center ring-1 ring-primary">2</span>
+            </div>
+            <span id="cartTotalHeader" class="text-xs font-price-display font-semibold tracking-tight text-white border-l border-white/20 pl-2 ml-0.5">৳ 4,850</span>
+          </button>
+
+        </div>
+      </div>
+    </header>
+
+  </div>
+
+  <!-- ================= GOOGLE ANTIGRAVITY SCROLL MOTION COMPONENT ================= -->
+  <!-- Positioned right below the fixed glass navigation bar -->
+  <section id="scroll-motion-container" class="relative w-full h-[350vh] bg-black">
+    <div id="sticky-bloom-viewport" class="sticky top-0 left-0 w-full h-screen overflow-hidden bg-black z-40">
+      
+      <!-- Canvas Engine -->
+      <canvas id="animation-canvas" class="w-full h-full block object-cover"></canvas>
+      
+      <!-- Ambient Overlays -->
+      <div class="absolute inset-0 pointer-events-none bg-radial-vignette z-10"></div>
+      <div class="absolute inset-0 pointer-events-none bg-gradient-to-b from-black/60 via-transparent to-black/80 z-10"></div>
+
+      <!-- Floating Scroll Cue -->
+      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 text-center pointer-events-none">
+        <div class="bg-black/60 backdrop-blur-md px-6 py-2.5 rounded-full border border-pink-500/30 text-white text-xs font-label-md tracking-wider flex items-center gap-2 shadow-2xl">
+          <span>SCROLL DOWN TO BLOOM & ENTER STORE</span>
+          <span class="animate-bounce text-pink-400">↓</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SLIDE-OVER CART DRAWER ================= -->
+  <div id="cartDrawerBackdrop" class="fixed inset-0 z-[110] drawer-blur-bg opacity-0 pointer-events-none transition-opacity duration-300">
+    <div id="cartDrawerPanel" class="fixed top-0 right-0 h-full w-full max-w-md bg-canvas-cream shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 ease-in-out border-l border-border-subtle">
+      
+      <!-- Drawer Header -->
+      <div class="p-5 border-b border-border-subtle flex items-center justify-between bg-surface-cream">
+        <div class="flex items-center gap-2.5">
+          <span class="material-symbols-outlined text-primary text-2xl">local_mall</span>
+          <div>
+            <h3 class="font-headline-sm text-headline-sm text-primary">Your Floral Cart</h3>
+            <p id="drawerItemCountText" class="font-label-sm text-label-sm text-secondary">2 bespoke items selected</p>
+          </div>
+        </div>
+        <button id="cartCloseBtn" class="p-2 rounded-full hover:bg-surface-petal text-on-surface-variant hover:text-primary transition-colors">
+          <span class="material-symbols-outlined text-xl">close</span>
+        </button>
+      </div>
+
+      <!-- Free Delivery Alert -->
+      <div class="bg-surface-petal px-5 py-2.5 border-b border-border-subtle flex items-center gap-2 text-xs">
+        <span class="material-symbols-outlined text-primary text-sm">local_shipping</span>
+        <span class="text-primary font-medium">✨ You've unlocked <strong class="underline decoration-accent-gold">FREE Same-Day Dhaka Delivery!</strong></span>
+      </div>
+
+      <!-- Items List Container -->
+      <div id="cartItemsContainer" class="flex-1 overflow-y-auto custom-scroll p-5 space-y-4">
+        <!-- Item 1 -->
+        <div class="cart-item flex gap-3.5 pb-4 border-b border-border-subtle" data-id="item-1" data-price="3600">
+          <img src="ezgif-frame-200.jpg" class="w-20 h-24 object-cover rounded-md border border-border-subtle flex-shrink-0" alt="Royal Banani Red Roses">
+          <div class="flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between">
+                <h4 class="font-headline-sm text-sm font-semibold text-primary leading-tight">The Royal Banani Crimson 50-Rose</h4>
+                <button onclick="removeCartItem('item-1')" class="text-outline hover:text-error transition-colors p-0.5">
+                  <span class="material-symbols-outlined text-base">delete</span>
+                </button>
+              </div>
+              <p class="font-label-sm text-[11px] text-secondary mt-0.5">Free Enclosure Card Included</p>
+            </div>
+            <div class="flex items-center justify-between mt-2">
+              <div class="flex items-center border border-border-subtle rounded bg-white">
+                <button onclick="updateQty('item-1', -1)" class="px-2 py-0.5 text-xs text-primary hover:bg-surface-cream">-</button>
+                <span id="qty-item-1" class="px-2.5 text-xs font-semibold">1</span>
+                <button onclick="updateQty('item-1', 1)" class="px-2 py-0.5 text-xs text-primary hover:bg-surface-cream">+</button>
+              </div>
+              <span class="font-price-display font-bold text-primary text-sm">৳ 3,600</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="cart-item flex gap-3.5 pb-4 border-b border-border-subtle" data-id="item-2" data-price="1250">
+          <img src="ezgif-frame-150.jpg" class="w-20 h-24 object-cover rounded-md border border-border-subtle flex-shrink-0" alt="Belgian Truffle Box">
+          <div class="flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between">
+                <h4 class="font-headline-sm text-sm font-semibold text-primary leading-tight">Belgian Artisan Truffle & Rose Hamper</h4>
+                <button onclick="removeCartItem('item-2')" class="text-outline hover:text-error transition-colors p-0.5">
+                  <span class="material-symbols-outlined text-base">delete</span>
+                </button>
+              </div>
+              <p class="font-label-sm text-[11px] text-secondary mt-0.5">Imported 16 pcs Truffle Box</p>
+            </div>
+            <div class="flex items-center justify-between mt-2">
+              <div class="flex items-center border border-border-subtle rounded bg-white">
+                <button onclick="updateQty('item-2', -1)" class="px-2 py-0.5 text-xs text-primary hover:bg-surface-cream">-</button>
+                <span id="qty-item-2" class="px-2.5 text-xs font-semibold">1</span>
+                <button onclick="updateQty('item-2', 1)" class="px-2 py-0.5 text-xs text-primary hover:bg-surface-cream">+</button>
+              </div>
+              <span class="font-price-display font-bold text-primary text-sm">৳ 1,250</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slot Selection -->
+      <div class="p-4 bg-surface-cream border-t border-border-subtle">
+        <label class="block font-label-md text-label-md text-primary font-semibold mb-1.5 flex items-center justify-between">
+          <span class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-base text-secondary">calendar_month</span>
+            Select Dhaka Delivery Slot
+          </span>
+          <span class="text-[10px] text-secondary font-normal">Today / Tomorrow</span>
+        </label>
+        <div class="grid grid-cols-2 gap-2 text-xs">
+          <button class="delivery-slot active border border-primary bg-primary text-white py-1.5 px-2 rounded text-center font-medium">
+            Today (Express 90m)
+          </button>
+          <button class="delivery-slot border border-border-subtle bg-white text-on-surface py-1.5 px-2 rounded text-center hover:border-primary">
+            Tomorrow (Any Slot)
+          </button>
+        </div>
+      </div>
+
+      <!-- Drawer Footer -->
+      <div class="p-5 border-t border-border-subtle bg-surface-cream space-y-3">
+        <div class="flex justify-between items-center text-xs text-on-surface-variant">
+          <span>Subtotal</span>
+          <span id="drawerSubtotal" class="font-semibold text-primary text-sm">৳ 4,850</span>
+        </div>
+        <div class="flex justify-between items-center text-xs text-on-surface-variant">
+          <span>Dhaka City Delivery</span>
+          <span class="font-semibold text-green-700">FREE</span>
+        </div>
+        <div class="border-t border-border-subtle pt-2 flex justify-between items-center">
+          <div>
+            <span class="font-label-lg text-label-lg font-bold text-primary">Estimated Total</span>
+            <p class="text-[10px] text-outline">VAT & Enclosure Card Included</p>
+          </div>
+          <span id="drawerTotal" class="font-price-display text-price-display text-primary font-bold">৳ 4,850</span>
+        </div>
+        <button onclick="proceedCheckout()" class="w-full bg-primary hover:bg-[#380B23] text-white py-3.5 rounded font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all">
+          <span>Proceed to Checkout</span>
+          <span class="material-symbols-outlined text-base">arrow_forward</span>
+        </button>
+        <p class="text-center text-[10px] text-outline flex items-center justify-center gap-1">
+          <span class="material-symbols-outlined text-xs">lock</span>
+          Encrypted SSLCommerz / bKash / Card Payment
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-canvas-cream via-surface-petal/40 to-canvas-cream py-16 md:py-24 border-b border-border-subtle pt-32">
+    <div class="max-w-7xl mx-auto px-4 md:px-12 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Left Hero Text -->
+        <div class="lg:col-span-6 space-y-6 flex flex-col justify-center">
+          <div>
+            <div class="inline-flex items-center gap-2 bg-white/80 border border-secondary/20 rounded-full px-3.5 py-1 text-primary shadow-xs mb-3">
+              <span class="material-symbols-outlined text-secondary text-sm" data-weight="fill">spa</span>
+              <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Handcrafted Luxury Floristry In Dhaka</span>
+            </div>
+            <h1 class="font-display-lg text-4xl sm:text-5xl lg:text-display-lg text-primary tracking-tight leading-[1.12]">
+              Express Feelings with Nature’s <span class="italic font-normal font-headline-lg text-secondary">Purest Elegance</span>.
+            </h1>
+          </div>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+            Same-day artisan floral arrangements, gourmet imported chocolates, and customized celebratory suites delivered fresh across Gulshan, Banani, Dhanmondi, and greater Dhaka.
+          </p>
+
+          <!-- Dual Call to Action -->
+          <div class="pt-2 flex flex-wrap items-center gap-4">
+            <a href="#products" class="h-12 px-8 bg-primary hover:bg-[#380B23] text-white rounded font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
+              <span>Explore Collection</span>
+              <span class="material-symbols-outlined text-base">arrow_forward</span>
+            </a>
+            <a href="#events" class="h-12 px-6 border border-primary/40 text-primary hover:bg-surface-petal rounded font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 transition-all duration-300">
+              <span class="material-symbols-outlined text-base">event</span>
+              <span>Book Event Styling</span>
+            </a>
+          </div>
+
+          <!-- Rating Badge -->
+          <div class="pt-4 flex items-center gap-3 text-xs text-on-surface-variant border-t border-border-subtle/70">
+            <div class="flex -space-x-2">
+              <div class="w-8 h-8 rounded-full bg-secondary text-white font-bold flex items-center justify-center border-2 border-white text-xs">R</div>
+              <div class="w-8 h-8 rounded-full bg-primary text-white font-bold flex items-center justify-center border-2 border-white text-xs">F</div>
+              <div class="w-8 h-8 rounded-full bg-accent-gold text-white font-bold flex items-center justify-center border-2 border-white text-xs">D</div>
+            </div>
+            <div>
+              <div class="flex items-center text-amber-500 text-xs">
+                ★★★★★ <span class="ml-1 text-on-surface font-semibold">4.9/5</span>
+              </div>
+              <p class="text-[11px] text-outline">Loved by 10,000+ patrons across Banani & Gulshan</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Image Card -->
+        <div class="lg:col-span-6 relative flex items-center justify-center">
+          <div class="relative w-full max-w-lg mx-auto rounded-2xl overflow-hidden border border-border-subtle shadow-xl bg-white p-3 group">
+            <div class="overflow-hidden rounded-xl aspect-[4/4]">
+              <img src="ezgif-frame-240.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" alt="Flowers for you Master Arrangement">
+            </div>
+            <div class="absolute bottom-6 left-6 right-6 sm:right-auto bg-white/95 backdrop-blur-md border border-border-subtle rounded-xl p-3.5 shadow-lg flex items-center gap-3 z-10">
+              <div class="w-10 h-10 rounded-full bg-surface-petal flex items-center justify-center text-primary flex-shrink-0">
+                <span class="material-symbols-outlined text-2xl">local_shipping</span>
+              </div>
+              <div>
+                <p class="font-headline-sm text-xs font-bold text-primary">90-Minute Express Dhaka</p>
+                <p class="font-label-sm text-[11px] text-secondary">Gulshan, Banani, Dhanmondi, Uttara</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Metrics -->
+      <div class="mt-16 pt-10 border-t border-border-subtle grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-3">
+          <p class="font-display-lg text-2xl md:text-3xl text-primary font-semibold">10,000+</p>
+          <p class="font-label-sm text-xs text-secondary mt-1 tracking-wider uppercase">Smiles Delivered in Dhaka</p>
+        </div>
+        <div class="p-3 border-l border-border-subtle">
+          <p class="font-display-lg text-2xl md:text-3xl text-primary font-semibold">90-Mins</p>
+          <p class="font-label-sm text-xs text-secondary mt-1 tracking-wider uppercase">Express Delivery Available</p>
+        </div>
+        <div class="p-3 border-l border-border-subtle">
+          <p class="font-display-lg text-2xl md:text-3xl text-primary font-semibold">100% Fresh</p>
+          <p class="font-label-sm text-xs text-secondary mt-1 tracking-wider uppercase">Direct Farm Stems Daily</p>
+        </div>
+        <div class="p-3 border-l border-border-subtle">
+          <p class="font-display-lg text-2xl md:text-3xl text-primary font-semibold">4.9 / 5.0</p>
+          <p class="font-label-sm text-xs text-secondary mt-1 tracking-wider uppercase">Over 1,400+ Verified Reviews</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED CATEGORIES BENTO GRID ================= -->
+  <section id="occasions" class="py-16 md:py-24 bg-surface-cream">
+    <div class="max-w-7xl mx-auto px-4 md:px-12">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Curated Collections</span>
+        <h2 class="font-headline-lg text-headline-lg text-primary mt-1">Hand-picked for Life’s Most Precious Moments</h2>
+        <p class="font-body-md text-on-surface-variant mt-2">Browse bespoke compositions created specifically for celebrations, romantic affirmations, and intimate gatherings.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <a href="#products" onclick="filterCategory('romantic')" class="group relative rounded-xl overflow-hidden bg-white border border-border-subtle shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+          <div class="relative aspect-[4/3] overflow-hidden bg-canvas-cream">
+            <img src="ezgif-frame-080.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" alt="Fresh Roses">
+            <span class="absolute top-3 right-3 bg-white/90 text-primary font-label-sm text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded-full shadow-xs">24 Arrangements</span>
+          </div>
+          <div class="p-5 flex justify-between items-center">
+            <div>
+              <h3 class="font-headline-sm text-base text-primary group-hover:text-secondary transition-colors">Fresh Roses & Dutch Stems</h3>
+              <p class="font-body-sm text-xs text-outline mt-0.5">Classic velvety reds, blush peach, and white</p>
+            </div>
+            <span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="#products" onclick="filterCategory('sameday')" class="group relative rounded-xl overflow-hidden bg-white border border-border-subtle shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+          <div class="relative aspect-[4/3] overflow-hidden bg-canvas-cream">
+            <img src="ezgif-frame-120.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" alt="Stargazer Lilies">
+            <span class="absolute top-3 right-3 bg-white/90 text-primary font-label-sm text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded-full shadow-xs">16 Arrangements</span>
+          </div>
+          <div class="p-5 flex justify-between items-center">
+            <div>
+              <h3 class="font-headline-sm text-base text-primary group-hover:text-secondary transition-colors">Stargazer & Oriental Lilies</h3>
+              <p class="font-body-sm text-xs text-outline mt-0.5">Scented blossoms for grand sentiments</p>
+            </div>
+            <span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="#products" onclick="filterCategory('combos')" class="group relative rounded-xl overflow-hidden bg-white border border-border-subtle shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+          <div class="relative aspect-[4/3] overflow-hidden bg-canvas-cream">
+            <img src="ezgif-frame-160.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" alt="Chocolate Combos">
+            <span class="absolute top-3 right-3 bg-white/90 text-primary font-label-sm text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded-full shadow-xs">18 Hampers</span>
+          </div>
+          <div class="p-5 flex justify-between items-center">
+            <div>
+              <h3 class="font-headline-sm text-base text-primary group-hover:text-secondary transition-colors">Chocolate & Flower Combos</h3>
+              <p class="font-body-sm text-xs text-outline mt-0.5">Ferrero pyramids, Swiss Lindt & fresh blooms</p>
+            </div>
+            <span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BEST SELLING PRODUCTS GRID ================= -->
+  <section id="products" class="py-16 md:py-24 bg-canvas-cream">
+    <div class="max-w-7xl mx-auto px-4 md:px-12">
+      
+      <!-- Section Header & Filter Tabs -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-border-subtle">
+        <div>
+          <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Seasonal Best Sellers</span>
+          <h2 class="font-headline-lg text-headline-lg text-primary mt-1">Dhaka’s Favorite Curations</h2>
+          <p class="font-body-md text-on-surface-variant text-sm mt-1">Crafted this morning in our Banani Atelier with premium imported blooms.</p>
+        </div>
+
+        <div id="filterTabsContainer" class="mt-4 md:mt-0 flex flex-wrap gap-2">
+          <button onclick="filterCategory('all')" class="category-tab active px-3.5 py-1.5 rounded-full text-xs font-semibold bg-primary text-white transition-all">All Curations</button>
+          <button onclick="filterCategory('sameday')" class="category-tab px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white border border-border-subtle text-on-surface hover:border-primary transition-all">Same-Day Delivery</button>
+          <button onclick="filterCategory('romantic')" class="category-tab px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white border border-border-subtle text-on-surface hover:border-primary transition-all">Romantic Bouquets</button>
+          <button onclick="filterCategory('combos')" class="category-tab px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white border border-border-subtle text-on-surface hover:border-primary transition-all">Luxury Combos</button>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Product 1 -->
+        <div class="product-item group bg-white border border-border-subtle rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col" data-cat="all sameday romantic">
+          <div class="relative aspect-[4/5] overflow-hidden bg-canvas-cream">
+            <span class="absolute top-3 left-3 z-10 bg-primary text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">Bestseller</span>
+            <button onclick="toggleWishlist(this, 'The Royal Banani Crimson 50-Rose')" class="wishlist-btn absolute top-3 right-3 z-10 w-8 h-8 rounded-full bg-white/90 hover:bg-white text-on-surface-variant hover:text-red-600 flex items-center justify-center shadow-xs transition-colors">
+              <span class="material-symbols-outlined text-[18px]">favorite</span>
+            </button>
+            <img src="ezgif-frame-200.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-600 ease-out" alt="Royal Banani Red Roses">
+            <div class="absolute inset-x-3 bottom-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <button onclick="addToCart('The Royal Banani Crimson 50-Rose', 3600, 'ezgif-frame-200.jpg')" class="w-full bg-primary hover:bg-[#380B23] text-white py-2.5 rounded font-label-md text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 shadow-md">
+                <span class="material-symbols-outlined text-sm">shopping_bag</span>
+                <span>Add to Bouquet</span>
+              </button>
+            </div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-amber-500 text-xs">
+                <span>★ 4.9</span>
+                <span class="text-outline text-[11px]">(84 reviews)</span>
+              </div>
+              <h3 class="font-headline-sm text-sm font-semibold text-primary mt-1 line-clamp-1 group-hover:text-secondary transition-colors">The Royal Banani Crimson 50-Rose</h3>
+              <p class="font-label-sm text-[11px] text-secondary mt-0.5">50 Imported Dutch Velvet Roses</p>
+            </div>
+            <div class="mt-3 pt-2 border-t border-border-subtle flex items-center justify-between">
+              <div>
+                <span class="font-price-display font-bold text-primary text-base">৳ 3,600</span>
+                <span class="font-body-sm text-xs text-outline line-through ml-1.5">৳ 4,200</span>
+              </div>
+              <span class="text-[10px] text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded font-semibold">90m Express</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-item group bg-white border border-border-subtle rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col" data-cat="all sameday romantic">
+          <div class="relative aspect-[4/5] overflow-hidden bg-canvas-cream">
+            <span class="absolute top-3 left-3 z-10 bg-secondary text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">New Arrival</span>
+            <button onclick="toggleWishlist(this, 'Gulshan Morning Whisper Lily')" class="wishlist-btn absolute top-3 right-3 z-10 w-8 h-8 rounded-full bg-white/90 hover:bg-white text-on-surface-variant hover:text-red-600 flex items-center justify-center shadow-xs transition-colors">
+              <span class="material-symbols-outlined text-[18px]">favorite</span>
+            </button>
+            <img src="ezgif-frame-220.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-600 ease-out" alt="Morning Whisper Lily">
+            <div class="absolute inset-x-3 bottom-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <button onclick="addToCart('Gulshan Morning Whisper Lily & Hydrangea', 4200, 'ezgif-frame-220.jpg')" class="w-full bg-primary hover:bg-[#380B23] text-white py-2.5 rounded font-label-md text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 shadow-md">
+                <span class="material-symbols-outlined text-sm">shopping_bag</span>
+                <span>Add to Bouquet</span>
+              </button>
+            </div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-amber-500 text-xs">
+                <span>★ 4.8</span>
+                <span class="text-outline text-[11px]">(52 reviews)</span>
+              </div>
+              <h3 class="font-headline-sm text-sm font-semibold text-primary mt-1 line-clamp-1 group-hover:text-secondary transition-colors">Gulshan Morning Whisper Lily & Hydrangea</h3>
+              <p class="font-label-sm text-[11px] text-secondary mt-0.5">Lilies, Hydrangeas & Lisianthus</p>
+            </div>
+            <div class="mt-3 pt-2 border-t border-border-subtle flex items-center justify-between">
+              <div>
+                <span class="font-price-display font-bold text-primary text-base">৳ 4,200</span>
+              </div>
+              <span class="text-[10px] text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded font-semibold">Same-Day</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-item group bg-white border border-border-subtle rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col" data-cat="all combos">
+          <div class="relative aspect-[4/5] overflow-hidden bg-canvas-cream">
+            <span class="absolute top-3 left-3 z-10 bg-accent-gold text-primary font-bold text-[10px] uppercase tracking-wider px-2.5 py-1 rounded">Artisan Exclusive</span>
+            <button onclick="toggleWishlist(this, 'Midnight Truffles & Scarlet Rose Box')" class="wishlist-btn absolute top-3 right-3 z-10 w-8 h-8 rounded-full bg-white/90 hover:bg-white text-on-surface-variant hover:text-red-600 flex items-center justify-center shadow-xs transition-colors">
+              <span class="material-symbols-outlined text-[18px]">favorite</span>
+            </button>
+            <img src="ezgif-frame-150.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-600 ease-out" alt="Midnight Truffles Box">
+            <div class="absolute inset-x-3 bottom-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <button onclick="addToCart('Midnight Truffles & Scarlet Rose Gift Box', 5100, 'ezgif-frame-150.jpg')" class="w-full bg-primary hover:bg-[#380B23] text-white py-2.5 rounded font-label-md text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 shadow-md">
+                <span class="material-symbols-outlined text-sm">shopping_bag</span>
+                <span>Add to Bouquet</span>
+              </button>
+            </div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-amber-500 text-xs">
+                <span>★ 5.0</span>
+                <span class="text-outline text-[11px]">(98 reviews)</span>
+              </div>
+              <h3 class="font-headline-sm text-sm font-semibold text-primary mt-1 line-clamp-1 group-hover:text-secondary transition-colors">Midnight Truffles & Scarlet Rose Gift Box</h3>
+              <p class="font-label-sm text-[11px] text-secondary mt-0.5">Hatbox + 12 Gold Leaf Truffles</p>
+            </div>
+            <div class="mt-3 pt-2 border-t border-border-subtle flex items-center justify-between">
+              <div>
+                <span class="font-price-display font-bold text-primary text-base">৳ 5,100</span>
+              </div>
+              <span class="text-[10px] text-secondary bg-surface-petal px-1.5 py-0.5 rounded font-semibold">Midnight Option</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-item group bg-white border border-border-subtle rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col" data-cat="all combos sameday">
+          <div class="relative aspect-[4/5] overflow-hidden bg-canvas-cream">
+            <span class="absolute top-3 left-3 z-10 bg-primary text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">Celebration Hit</span>
+            <button onclick="toggleWishlist(this, 'Celebration Duo')" class="wishlist-btn absolute top-3 right-3 z-10 w-8 h-8 rounded-full bg-white/90 hover:bg-white text-on-surface-variant hover:text-red-600 flex items-center justify-center shadow-xs transition-colors">
+              <span class="material-symbols-outlined text-[18px]">favorite</span>
+            </button>
+            <img src="ezgif-frame-260.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-600 ease-out" alt="Celebration Duo">
+            <div class="absolute inset-x-3 bottom-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <button onclick="addToCart('Celebration Duo: Dutch Roses & Ferrero Pyramid', 3950, 'ezgif-frame-260.jpg')" class="w-full bg-primary hover:bg-[#380B23] text-white py-2.5 rounded font-label-md text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 shadow-md">
+                <span class="material-symbols-outlined text-sm">shopping_bag</span>
+                <span>Add to Bouquet</span>
+              </button>
+            </div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-amber-500 text-xs">
+                <span>★ 4.9</span>
+                <span class="text-outline text-[11px]">(114 reviews)</span>
+              </div>
+              <h3 class="font-headline-sm text-sm font-semibold text-primary mt-1 line-clamp-1 group-hover:text-secondary transition-colors">Celebration Duo: Dutch Roses & Ferrero</h3>
+              <p class="font-label-sm text-[11px] text-secondary mt-0.5">30 Roses + 24 Ferrero Chocolates</p>
+            </div>
+            <div class="mt-3 pt-2 border-t border-border-subtle flex items-center justify-between">
+              <div>
+                <span class="font-price-display font-bold text-primary text-base">৳ 3,950</span>
+              </div>
+              <span class="text-[10px] text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded font-semibold">90m Express</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BESPOKE EVENT STYLING ================= -->
+  <section id="events" class="py-16 md:py-24 bg-surface-petal/40 border-y border-border-subtle">
+    <div class="max-w-7xl mx-auto px-4 md:px-12">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Bespoke Concierge</span>
+        <h2 class="font-headline-lg text-headline-lg text-primary mt-1">Artisanal Styling for Grand Celebrations</h2>
+        <p class="font-body-md text-on-surface-variant mt-2">Beyond retail bouquets, our senior floral architects design memorable spatial installations across Bangladesh’s most prestigious venues.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-white p-8 rounded-2xl border border-border-subtle shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-surface-petal flex items-center justify-center text-primary mb-6">
+              <span class="material-symbols-outlined text-3xl">celebration</span>
+            </div>
+            <h3 class="font-headline-sm text-lg text-primary font-bold">Wedding & Stage Floral Decor</h3>
+            <p class="font-body-md text-on-surface-variant text-sm mt-3 leading-relaxed">
+              Custom floral arches, romantic aisle pathways, bridal car floral drapery, and heirloom garlands designed specifically for luxury Holud, Mehndi, and Reception banquets in Dhaka.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-border-subtle">
+            <span class="font-label-sm text-xs font-semibold text-secondary">Starting from ৳ 35,000</span>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-white p-8 rounded-2xl border border-border-subtle shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-surface-petal flex items-center justify-center text-primary mb-6">
+              <span class="material-symbols-outlined text-3xl">domain</span>
+            </div>
+            <h3 class="font-headline-sm text-lg text-primary font-bold">Corporate & Gala Installations</h3>
+            <p class="font-body-md text-on-surface-variant text-sm mt-3 leading-relaxed">
+              Elevate executive suites, diplomatic receptions, and luxury retail launch events with weekly rotational fresh floral vases and customized brand-color arrangements.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-border-subtle">
+            <span class="font-label-sm text-xs font-semibold text-secondary">Custom Monthly Retainers</span>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-white p-8 rounded-2xl border border-border-subtle shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-surface-petal flex items-center justify-center text-primary mb-6">
+              <span class="material-symbols-outlined text-3xl">nightlight</span>
+            </div>
+            <h3 class="font-headline-sm text-lg text-primary font-bold">Midnight Surprise Dhaka Delivery</h3>
+            <p class="font-body-md text-on-surface-variant text-sm mt-3 leading-relaxed">
+              Never miss the magic of midnight. Guaranteed 12:00 AM sharp doorstep delivery with white-glove concierges for milestone birthdays, anniversaries, and romantic proposals.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-border-subtle">
+            <span class="font-label-sm text-xs font-semibold text-secondary">Guaranteed Slots Available</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Banner -->
+      <div id="bespoke" class="mt-12 bg-primary text-white rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+        <div class="space-y-2 text-center md:text-left">
+          <h3 class="font-headline-md text-2xl md:text-3xl text-white">Have a Unique Vision in Mind?</h3>
+          <p class="text-tertiary-fixed text-sm max-w-xl">Consult directly with our master floral designers at the Banani Atelier or arrange a private virtual consultation.</p>
+        </div>
+        <a href="https://wa.me/8801712345678" target="_blank" class="h-12 px-6 bg-accent-gold hover:bg-[#b08e4d] text-primary font-label-md text-xs font-bold uppercase tracking-wider rounded flex items-center gap-2 shadow-sm transition-all flex-shrink-0">
+          <span class="material-symbols-outlined text-base">chat</span>
+          <span>WhatsApp Designer Call</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMPREHENSIVE FOOTER ================= -->
+  <footer class="bg-surface-cream text-primary font-headline-sm border-t border-border-subtle py-12">
+    <div class="max-w-7xl mx-auto px-4 md:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-2xl text-secondary" data-weight="fill">local_florist</span>
+            <span class="font-headline-lg text-2xl text-primary font-medium">Flowers for you</span>
+          </div>
+          <p class="font-body-sm text-xs text-on-surface-variant max-w-sm leading-relaxed">
+            Dhaka’s premier artisanal floral boutique and luxury gift suite atelier. Crafting emotive botanical memories with velvety Dutch stems, imported confections, and bespoke celebratory decor.
+          </p>
+          <div class="space-y-1.5 text-xs text-on-surface-variant">
+            <p><strong>Banani Atelier:</strong> House 42, Road 11, Block D, Banani, Dhaka-1213</p>
+            <p><strong>Hotline & WhatsApp:</strong> +880 1712-345678</p>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-label-md text-xs font-bold uppercase tracking-wider text-primary">Artisanal Suite</h4>
+          <ul class="space-y-2 text-xs text-on-surface-variant">
+            <li><a href="#products" class="hover:text-primary">Dutch Roses Collection</a></li>
+            <li><a href="#products" class="hover:text-primary">Stargazer Lilies</a></li>
+            <li><a href="#products" class="hover:text-primary">Ferrero & Lindt Combos</a></li>
+            <li><a href="#events" class="hover:text-primary">Bridal Stage Decor</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-label-md text-xs font-bold uppercase tracking-wider text-primary">Dhaka Concierge</h4>
+          <ul class="space-y-2 text-xs text-on-surface-variant">
+            <li><a href="#" class="hover:text-primary">About Us</a></li>
+            <li><a href="#" class="hover:text-primary">Same-Day Delivery</a></li>
+            <li><a href="#" class="hover:text-primary">Flower Care Guide</a></li>
+            <li><a href="#" class="hover:text-primary">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-label-md text-xs font-bold uppercase tracking-wider text-primary">Newsletter</h4>
+          <p class="text-xs text-on-surface-variant">Subscribe for ৳300 off your initial order.</p>
+          <form onsubmit="handleNewsletter(event)" class="space-y-2">
+            <div class="flex items-center bg-white border border-border-subtle rounded p-1">
+              <input id="newsletterEmail" type="email" placeholder="Enter your email" required class="w-full text-xs border-0 focus:ring-0 px-2">
+              <button type="submit" class="bg-primary text-white text-xs px-3 py-1.5 rounded hover:bg-[#380B23]">Join</button>
+            </div>
+            <div id="newsletterSuccess" class="hidden text-[11px] text-emerald-700 bg-emerald-50 p-2 rounded">🎉 Code generated: <strong class="font-bold">BLOOM300</strong></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-border-subtle flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex flex-wrap items-center gap-2 text-xs text-outline">
+          <span class="font-semibold text-primary">Accepted Payments:</span>
+          <span class="bg-white border px-2 py-0.5 rounded font-bold text-pink-600">bKash</span>
+          <span class="bg-white border px-2 py-0.5 rounded font-bold text-orange-600">Nagad</span>
+          <span class="bg-white border px-2 py-0.5 rounded font-semibold text-blue-800">VISA</span>
+          <span class="bg-white border px-2 py-0.5 rounded text-[10px]">SSLCommerz 256-bit</span>
+        </div>
+        <div class="text-xs text-on-surface-variant">© 2026 Flowers for you Dhaka. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= TOAST NOTIFICATION CONTAINER ================= -->
+  <div id="toastNotification" class="fixed bottom-6 right-6 z-[120] transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 bg-primary text-white px-5 py-3 rounded-lg shadow-xl border border-secondary-fixed">
+    <span class="material-symbols-outlined text-accent-gold text-xl">check_circle</span>
+    <span id="toastMessage" class="text-xs font-medium">Added to bouquet! 🌸</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
